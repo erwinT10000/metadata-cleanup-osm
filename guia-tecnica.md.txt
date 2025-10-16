@@ -1,0 +1,20 @@
+# Guía para la eliminación de Metadatos Sensibles aplicado al uso de OpenStreetMap
+
+## Fases del Proyecto
+
+### 1. Evaluación del Problema
+- Identificación de riesgos en archivos compartidos (PDFs, JPEGs, DOCs, etc.)
+- Tipos de metadatos sensibles: autor, GPS, software, rutas locales
+
+### 2. Desarrollo Técnico
+- Uso de `exiftool` y `pdf-redact-tools`
+- Scripts: `check_metadata.sh` y `clean_metadata.sh`
+
+### 3. Publicación
+- Repositorio en GitHub con documentación, ejemplos y licencia CC BY 4.0
+
+### 4. Comunicación
+- Plantillas para informar a la comunidad sobre buenas prácticas
+
+### 5. Monitoreo
+- Revisión periódica de archivos compartidos en OSM

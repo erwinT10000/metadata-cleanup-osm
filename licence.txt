@@ -1,0 +1,26 @@
+
+---
+
+### 2. `check_metadata.sh`
+
+```bash
+#!/bin/bash
+
+# Script para escanear metadatos sensibles en imágenes y PDFs
+
+archivo="$1"
+
+if [[ -z "$archivo" ]]; then
+  echo "Uso: $0 archivo"
+  exit 1
+fi
+
+echo "Escaneando metadatos en: $archivo"
+
+if [[ "$archivo" == *.pdf ]]; then
+  pdfinfo "$archivo"
+elif [[ "$archivo" == *.jpg || "$archivo" == *.jpeg || "$archivo" == *.png ]]; then
+  exiftool "$archivo" | grep -E 'Author|Creator|Producer|GPS'
+else
+  echo "Formato no soportado. Solo PDF, JPG, JPEG, PNG."
+fi
