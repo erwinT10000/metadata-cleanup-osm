@@ -1,4 +1,8 @@
 markdown
+
+
+#"El autor declara que este trabajo es original, con la asistencia de la herramienta de IA [Gemini] para la recopilación de información, la corrección de estilo, y tutoriales. El uso de esta herramienta se hizo conforme a la ética de atribución y los principios de transparencia." 
+
 #  Eliminación de Metadatos Sensibles en Archivos para OSM
 
 Este proyecto ofrece una guía técnica y dos scripts en Bash para escanear y eliminar metadatos sensibles en archivos compartidos en el ecosistema de OpenStreetMap (OSM), como imágenes y documentos técnicos.
